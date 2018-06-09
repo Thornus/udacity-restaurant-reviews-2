@@ -10,6 +10,7 @@ let filesToCache = [
 	'/js/restaurant_info.js',
 	'/js/dbhelper.js',
 	'/js/picturefill.min.js',
+	'/js/idb.js',
 	'/js/serviceworker-cache-polyfill.js',
 	'/data/restaurants.json'
 ];
