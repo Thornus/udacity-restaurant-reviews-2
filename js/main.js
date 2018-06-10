@@ -80,8 +80,13 @@ window.initMap = () => {
   self.map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
     center: loc,
-    scrollwheel: false
+    scrollwheel: false,
+	title: 'Google Maps'
   });
+
+  setTimeout(() => {
+	  document.getElementsByTagName("IFRAME")[0].setAttribute('title', 'Google Maps');
+  }, 200);
   updateRestaurants();
 }
 
@@ -153,7 +158,6 @@ createRestaurantHTML = (restaurant) => {
 
   const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
-  name.setAttribute('role', 'header');
   name.setAttribute('tabindex', '0');
   li.append(name);
 
