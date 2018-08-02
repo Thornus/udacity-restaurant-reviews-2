@@ -358,3 +358,7 @@ nav h1 a {
 		padding-top: 10px;
 	}
 }
+
+.favorite-btn {
+	margin-left: 2px !important;
+}

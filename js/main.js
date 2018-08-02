@@ -177,6 +177,15 @@ createRestaurantHTML = (restaurant) => {
   more.setAttribute('role', 'button');
   li.append(more)
 
+  const favorite = document.createElement('a');
+  favorite.innerHTML = 'Star';
+  favorite.onclick = function(e) {
+	  	e.target.innerHTML = 'Starred!';
+  };
+  favorite.setAttribute('role', 'button');
+  favorite.className = 'favorite-btn';
+  li.append(favorite)
+
   return li;
 }
 
